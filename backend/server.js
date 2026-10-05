@@ -35,7 +35,7 @@ app.get("/api/notes", async (req, res) => {
     }),
   );
 
-  res.json(withUrl);
+  res.json(withUrls);
 });
 
 // upload.single("file") runs before this handler. By the time the handler is
