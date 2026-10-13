@@ -31,6 +31,6 @@ jobs:
           TAG: ${{ github.sha }}
         run: |
           docker build --target production \
-            -t "$REGISTRY/notes-app-josh:latest" \
-            -t "$REGISTRY/notes-app-josh:$TAG" .
-          docker push --all-tags "$REGISTRY/notes-app-josh"
+            -t "$REGISTRY/notes-app:latest" \
+            -t "$REGISTRY/notes-app:$TAG" .
+          docker push --all-tags "$REGISTRY/notes-app"
