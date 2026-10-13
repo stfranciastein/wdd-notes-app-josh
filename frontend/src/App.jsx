@@ -33,6 +33,7 @@ function App() {
   return (
     <div>
       <h1>Your Notes</h1>
+
       <form onSubmit={submit}>
         <input
           value={text}
